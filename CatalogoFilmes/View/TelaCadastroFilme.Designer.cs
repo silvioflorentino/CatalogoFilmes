@@ -34,10 +34,10 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
-            textBox3 = new TextBox();
+            txBoxFilme = new TextBox();
+            txBoxEstreia = new TextBox();
+            cBoxCategoria = new ComboBox();
+            txBoxDuracao = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -91,39 +91,39 @@
             label5.TabIndex = 4;
             label5.Text = "Duração:";
             // 
-            // textBox1
+            // txBoxFilme
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(33, 114);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(357, 34);
-            textBox1.TabIndex = 5;
+            txBoxFilme.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txBoxFilme.Location = new Point(33, 114);
+            txBoxFilme.Name = "txBoxFilme";
+            txBoxFilme.Size = new Size(357, 34);
+            txBoxFilme.TabIndex = 5;
             // 
-            // textBox2
+            // txBoxEstreia
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(33, 180);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 34);
-            textBox2.TabIndex = 6;
+            txBoxEstreia.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txBoxEstreia.Location = new Point(33, 180);
+            txBoxEstreia.Name = "txBoxEstreia";
+            txBoxEstreia.Size = new Size(125, 34);
+            txBoxEstreia.TabIndex = 6;
             // 
-            // comboBox1
+            // cBoxCategoria
             // 
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Terror", "Romance", "Comédia", "Ficção", "Animação", "Ação", "Suspense", "Drama" });
-            comboBox1.Location = new Point(237, 181);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 36);
-            comboBox1.TabIndex = 7;
+            cBoxCategoria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cBoxCategoria.FormattingEnabled = true;
+            cBoxCategoria.Items.AddRange(new object[] { "Terror", "Romance", "Comédia", "Ficção", "Animação", "Ação", "Suspense", "Drama" });
+            cBoxCategoria.Location = new Point(237, 181);
+            cBoxCategoria.Name = "cBoxCategoria";
+            cBoxCategoria.Size = new Size(151, 36);
+            cBoxCategoria.TabIndex = 7;
             // 
-            // textBox3
+            // txBoxDuracao
             // 
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(33, 248);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 34);
-            textBox3.TabIndex = 8;
+            txBoxDuracao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txBoxDuracao.Location = new Point(33, 248);
+            txBoxDuracao.Name = "txBoxDuracao";
+            txBoxDuracao.Size = new Size(125, 34);
+            txBoxDuracao.TabIndex = 8;
             // 
             // button1
             // 
@@ -133,6 +133,7 @@
             button1.Size = new Size(114, 113);
             button1.TabIndex = 9;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // TelaCadastroFilme
             // 
@@ -140,10 +141,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(424, 386);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txBoxDuracao);
+            Controls.Add(cBoxCategoria);
+            Controls.Add(txBoxEstreia);
+            Controls.Add(txBoxFilme);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -165,10 +166,10 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox3;
+        private TextBox txBoxFilme;
+        private TextBox txBoxEstreia;
+        private ComboBox cBoxCategoria;
+        private TextBox txBoxDuracao;
         private Button button1;
     }
 }
